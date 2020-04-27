@@ -98,17 +98,19 @@
   transform:  rotate(25deg);
   position: absolute;
 }
-@media(max-width: 1028px;) {
+#cta{
 
-#title {
+  background-color: #ff4c68;
+  color: #fff;
+  padding: 7% 15%;
   text-align: center;
 }
+.cta-heading{
+    font-family: "Montserrat-Black";
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
 
-.title-image{
-  position: static;
-  transform: rotate(0);
-}
-}
 
 .feature-box{
   text-align: center;
@@ -124,6 +126,13 @@
   position: relative;
   z-index: 1;
 }
+#footer{
+  padding: 7% 15%;
+  text-align: center;
+}
+.social-icon{
+  margin: 20px 10px;
+}
 .icon{
   color: #ef8172;
   margin-bottom: 1rem;
@@ -133,8 +142,20 @@
 
 .icon:hover{
 
-  color: #ff4c68;
+  color: #ff4c68;}
+
+@media(max-width: 1028px;) {
+
+#title {
+  text-align: center;
 }
+
+.title-image{
+  position: static;
+  transform: rotate(0);
+}
+}
+
 
   </style>
   
@@ -148,11 +169,11 @@
     <a class="navbar-brand "href="">TinDog</a>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="">Contact</a>
+        <a class="nav-link" href="#footer">Contact</a>
         <li class="nav-item">
-          <a class="nav-link" href="">Pricing</a>
+          <a class="nav-link" href="#pricing">Pricing</a>
           <li class="nav-item">
-            <a class="nav-link" href="">Download</a>
+            <a class="nav-link" href="#cta">Download</a>
            
             
 
@@ -305,9 +326,9 @@
 
   <section id="cta">
 
-    <h3>Find the True Love of Your Dog's Life Today.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
+    <h3 class="cta-heading">Find the True Love of Your Dog's Life Today.</h3>
+    <button class="download-button btn btn-lg btn-dark" type="button"><i class="fab fa-apple"></i>Download</button>
+    <button class="download-button btn btn-lg btn-light" type="button"><i class="fab fa-google-play"></i>Download</button>
 
   </section>
 
@@ -315,6 +336,10 @@
   <!-- Footer -->
 
   <footer id="footer">
+    <i class="social-icon fab fa-facebook-f"></i>
+    <i class="social-icon fab fa-twitter"></i>
+    <i class="social-icon fab fa-instagram"></i>
+    <i class="social-icon fas fa-envelope"></i>
 
     <p>© Copyright 2018 TinDog</p>
 
